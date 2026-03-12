@@ -11,8 +11,19 @@ const {
 } = require("../controllers/employeeController");
 
 // CRUD
+// router.post("/employees", createEmployee);
+// router.get("/employees", getEmployees);
+// router.get("/employees/:id", getEmployeeById);
+// router.put("/employees/:id", updateEmployee);
+// router.delete("/employees/:id", deleteEmployee);
+
+
 router.post("/employees", createEmployee);
 router.get("/employees", getEmployees);
+
+// SEARCH FIRST
+router.get("/employees/search/query", searchEmployees);
+
 router.get("/employees/:id", getEmployeeById);
 router.put("/employees/:id", updateEmployee);
 router.delete("/employees/:id", deleteEmployee);
